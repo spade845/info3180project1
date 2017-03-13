@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{%block main%}
+<h1>Profile</h1>
+<hr />
+<hr />
+
+    <img src="{{data['image']}}">
+  
+  <div class="col-sm-7">
+    <div id="title"></div>
+    <div id="data-points">
+      <div><strong>Created On</strong>: {{data['created_on']}}</div>
+      <div><strong>Username</strong>: {{data['username']}} </div>
+      <div ><strong>First Name</strong>: {{data['firstname']}} </div>
+      <div><strong>Last Name</strong>: {{data['lastname']}} </div>
+      <div><strong>ID Number</strong>: {{data['uid']}}</div>
+      <div><strong>Age</strong>: {{data['age']}}</div>
+      <div><strong>Gender</strong>: {{data['gender']}}</div>
+      <div><strong>Bio</strong>: {{data['bio']}} </div>
+      <div></div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main %}
+<ul>
+{% for user in user %}
+<li>
+<a href="/profile/{{user.uid}}", method="post">
+    {{user.uid}}
+    {{user.username}}
+</a>
+
+</li>
+{% endfor %}
+</ul>
+
+
+{% endblock %}
